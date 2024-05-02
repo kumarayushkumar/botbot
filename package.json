@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "build": "tsc",
     "start": "tsc && nodemon dist/server.js",
+    "command": "tsc && node dist/commands/command.js",
     "dev": "ts-node src/server.ts",
     "dev2": "tsnd --trace-warnings --respawn --transpile-only --exit-child src/server.ts",
     "fw": "prettier --write ./src"
